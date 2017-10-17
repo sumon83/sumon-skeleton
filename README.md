@@ -1,2 +1,0 @@
-# sumon-skeleton
-wpLearning
