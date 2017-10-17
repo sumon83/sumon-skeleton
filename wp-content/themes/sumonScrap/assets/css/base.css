@@ -1,0 +1,279 @@
+/* 
+                Author     : Munjin Hasan Adil
+*/
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/FontAwesome.eot');
+    src: url('../fonts/FontAwesome.eot?#iefix') format('embedded-opentype'), url('../fonts/FontAwesome.woff2') format('woff2'), url('../fonts/FontAwesome.woff') format('woff'), url('../fonts/FontAwesome.ttf') format('truetype'), url('../fonts/FontAwesome.svg#Baskvill') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html {font-size: 1.3 rem;}
+body {font-family: 'Cormorant Garamond', serif; font-size: 1.25rem;} 
+* {outline: none !important;}
+p {font-size: 1.25rem;}
+.btn-outline-success {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #53851E;
+    background-color: transparent;
+    background-image: none;
+    border-color: #53851E;
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #53851E;
+    border-color: #53851E;
+}
+/*================= Header ===================*/
+header {
+    padding-top: 8px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+}
+.phone i {display: inline-block; vertical-align: middle; font-size: 1.88rem; margin-right: 10px;}
+.phone span {display: inline-block; vertical-align: middle; font-size: 1.88rem; font-style: italic;}
+.navbar-brand img {margin-bottom: 6px;}
+
+/*================= Navigation ===================*/
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {color: #7cc92a;}
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    color: #d4d4d4;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {color: #7cc92a;}
+.navbar-dark .navbar-toggler {cursor: pointer;}
+.dropdown-item {font-size: 1.2rem;}
+
+/*================= Main Carousel ===================*/
+#mainCarousel {border-bottom: 1px solid #d9d9d9;}
+#mainCarousel h3 {color: #000; font-weight: bold; font-size: 4.38rem;}
+#mainCarousel p {color: #000; font-size: 1.5rem;}
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    bottom: auto;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+.carousel-control-prev, .carousel-control-next {display: none;}
+.carousel-indicators .active {
+    background-color: #000;
+}
+.carousel-indicators li {
+    background-color: rgba(0,0,0,.2);
+}
+.carousel-caption span {display: block; margin-top: 10px;}
+
+
+/*================= Featured Section ===================*/
+.featured {margin-top: 50px; padding-bottom: 40px; text-align: center; color: #333;}
+.featured-box {color: #000; padding: 10px 15px 30px 15px;}
+.featured p {font-size:1.3rem;}
+.featured .col {margin-left: 10px; margin-right: 10px;  margin-bottom: 30px;}
+.featured h4 {
+    padding-bottom: 0;
+    font-size: 2rem; 
+    margin-top: 15px;
+    position:relative;
+    display:inline-block;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+.featured h4:after {
+    content:'';
+    position:absolute;
+    left:0; 
+    right:0;
+    top:100%;
+    margin:15px auto 20px;
+    width:40px;
+    height:3px;
+    background:#53851E;
+}
+
+/*================= Welcome =================*/
+.welcome {
+    background: #dedede url(../img/mt-0560-bg1filter.jpg) no-repeat center center fixed;
+    color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.welcome .container {padding-top: 70px; padding-bottom: 70px;}
+.welcome h2 {font-size: 2.75rem; margin-bottom: 22px; font-weight: bold;}
+.welcome h2 span {display: block; font-size: 1.25rem; margin-top: 10px;}
+.welcome p {line-height: 38px;}
+.reservation {border: 4px solid #fff; padding: 20px; background: rgba(255,255,255,.3); border-radius: 5px;}
+.reservation h4 {margin-bottom: 20px;}
+.reservation input {height: 60px;}
+.reservation .btn {width: 100%; text-transform: uppercase; font-size: 1.19rem; padding: 15px 10px; border-color: #53851e; border-width: 3px; color: #fff;}
+.reservation .btn:hover {background: #53851e;}
+
+/*================= Popular Dishes =================*/
+.popular-dishes {padding-top: 50px; padding-bottom: 50px; background: #dddddd;}
+.popular-dishes h2 {font-size:4.50rem; margin-top: 15px; margin-bottom: 55px; text-align: center; font-weight: bold;}
+.price {color: #6fb426; font-size: 2.13rem; font-style: italic;}
+
+
+/*================= Footer =================*/
+footer {margin-top: 50px; text-align: center;}
+.footer-contact, .footer-menu, .footer-hours {margin-bottom: 40px;}
+footer h4 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    position:relative;
+    display:inline-block;
+    font-weight: bold;
+}
+.footer-hours-box {margin-bottom: 30px; color: #8EC256;}
+footer h5 {font-weight: bold; color: #000; font-size: 1.5rem;}
+
+
+.fa-phone {font-size: 22px;}
+.fa-phone span {font-size: 24px; margin-left: 10px;}
+
+.fa-envelope {margin-top: 5px; font-size: 18px;}
+.fa-envelope a { margin-left: 10px;}
+
+.footer-menu {text-align: center;}
+
+.footer-top {padding-top: 40px; padding-bottom: 50px;}
+.footer-top ul li {margin-bottom: 17px;}
+.footer-top ul {padding-left: 0;}
+.footer-top ul li a {color: #000;}
+.footer-bottom {background: #000; padding-top: 25px; padding-bottom: 17px; color: #fff; text-align: center;}
+footer .copyright {margin-bottom: 4px; font-size: 14px; color: #bfbfbf;}
+footer .credit p {margin-bottom: 4px; font-size: 10px; color: #bfbfbf; line-height: 16px;}
+.social-icons {display: inline; text-align: center; margin: 0 auto 20px;}
+.social-icons ul {margin-bottom: 22px; padding-left: 0;}
+.social-icons li {display: inline-block; margin: 0 3px;}
+.social-icons .btn-social-icon {width: 37px !important; height: 37px !important; border-radius: 35px; border: 2px solid #777; padding: 7px 5px 0;}
+.social-icons .fa {font-size: 18px !important; color: #777;}
+.social-icons .btn {background: none;}
+.social-icons i {font-size: 24px;}
+.btn-facebook:hover {background: #3B5998; border-color:#3B5998;}
+.btn-twitter:hover {background: #11c1ff; border-color: #11c1ff;}
+.btn-linkedin:hover {background-color: #006dc0; border-color: #006dc0;}
+.btn-google-pl:hover {background-color: #e3411f; border-color: #e3411f;}
+.social-icons .btn:hover i {color: #fff;}
+.credit {margin-top: -60px;}
+.credit p {float: right; text-align: left; font-size: 11px; line-height: 15px; color: #707070;}
+.credit a {font-size: 11px; line-height: 15px; color: #707070;}
+.credit a:hover {color: #f5f5f5;}
+
+/*================= Media =================*/
+@media (max-width: 1199px) {
+    .navbar-expand-lg .navbar-nav .nav-link {text-align: center; font-size: 1rem; padding-right: .5rem; padding-left: .5rem;}
+    #mainCarousel h3 {font-size: 2.5rem;}
+    .carousel-caption {top: 60%;}
+}
+@media (max-width: 992px) {
+    html {font-size: .85rem;}
+    header {position: static;}
+    .ristos-menu {padding-top: 20px;}
+    .ristos-menu h2 {margin-bottom: 20px;}
+    .navbar-expand-lg .navbar-nav .nav-link {font-size: 1.5rem;}
+    .credit {margin-top: 10px;}
+    .credit p {float: none; text-align: center; margin-top: 10px;}
+    header {text-align: center;}
+}
+@media (max-width: 768px) {
+    .featured, .reservation, footer {margin-top: 30px;}
+    .footer-hours {margin-bottom: 10px !important;}
+    .phone {margin-bottom: 10px;}
+}
+/*@media (max-width: 576px) {
+    .navbar-brand img {max-width: 200px;}
+}*/
+
+/*================= Image Hover Effect =================*/
+.main-title{
+    color: #2d2d2d;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 0.7em 0;
+}
+.content {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay{
+    opacity: 1;
+}
+.content-image{
+    width: 100%;
+}
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+.content-details h3{
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+.content-details p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 22px;
+}
+.fadeIn-bottom{
+    top: 80%;
+}
+.fadeIn-top{
+    top: 20%;
+}
+.fadeIn-left{
+    left: 20%;
+}
+.fadeIn-right{
+    left: 80%;
+}
