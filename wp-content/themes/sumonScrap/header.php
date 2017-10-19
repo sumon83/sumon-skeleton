@@ -15,7 +15,9 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
     <head>
-        <title>Home | Risto's Place | Food & Spirits</title>
+        <title><?php //echo get_bloginfo('name');  
+        echo ['MyBlogTitle'];
+        ?> </title>
         <!-- Required meta tags -->
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -75,12 +77,13 @@
                                 <a class="nav-link" href="#">News & Posts</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
+                                <a class="nav-link" href="#">Contact Usssss</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
 
             </div>
+            <h3>I am header</h3>
         </header>
 

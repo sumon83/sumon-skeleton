@@ -14,6 +14,15 @@
  * @since 1.0
  * @version 1.0
  */
-
+//Header of the layout
 get_header(); 
+
+//Banner/Slider of the layout
+get_sidebar('banner');
+
+//Other Front page Contents
+get_template_part('/template_parts/', 'home_page');
+
+//Footer of the Layout
+get_footer();
 ?>
