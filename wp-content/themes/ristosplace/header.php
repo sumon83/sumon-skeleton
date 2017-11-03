@@ -2,11 +2,8 @@
 /**
  * The header for our theme
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
+ * This is the template that displays all of the <head> section and everything inside <header>
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
  * @subpackage Ristos_Place
  * @since 1.0
  * @version 1.0
@@ -25,13 +22,12 @@
         <header>
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-12 order-12 col-md-6 order-md-1">
-                        
+                    <div class="col-12 order-12 col-md-6 order-md-1">                        
                         <a class="navbar-brand" href="<?php echo site_url(); ?>">
                             <?php
-                                if(function_exists('the_custom_logo')){
-                                    the_custom_logo();
-                                }
+                            if (function_exists('the_custom_logo')) {
+                                the_custom_logo();
+                            }
                             ?>
                         </a>
                     </div>
@@ -63,11 +59,29 @@
             </div>
 
             <?php get_template_part('template-parts/header/header', 'image'); ?>
-
-            <?php if (has_nav_menu('top')) : ?>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <?php
+                        if (has_nav_menu('header_menu')) :
+                            wp_nav_menu(
+                                    array(
+                                        'menu_class' => 'navbar-nav text-md-center nav-justified w-100',
+                                        'theme_location' => 'header_menu',
+                                        'fallback_cb' => 'false',
+                                        'walker' => ''
+                                    )
+                            );
+                            ?>
+                        </div>
+                    </div>
+                </nav>
                 <div class="navigation-top">
                     <div class="wrap">
-                        <?php get_template_part('template-parts/navigation/navigation', 'top'); ?>
+                        <?php get_template_part('template-parts/navigation/navigation', 'header_menu'); ?>
                     </div><!-- .wrap -->
                 </div><!-- .navigation-top -->
             <?php endif; ?>

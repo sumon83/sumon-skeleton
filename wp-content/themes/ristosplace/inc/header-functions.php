@@ -11,9 +11,11 @@ function zws_ristosplace_theme_load_script(){
     wp_enqueue_style('base', get_template_directory_uri().'/assets/css/base.css', array(), '1.0', null);
     
     wp_enqueue_script('js-bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), null, true);
-    //wp_enqueue_script('js-owl-carousel-j', get_template_directory_uri() . '/assets/plugins/owl-carousel/owl.carousel.js', array('jquery'), '1.1.1', true);
+    wp_enqueue_script('js-owl-carousel-j', get_template_directory_uri() . '/assets/plugins/owl-carousel/owl.carousel.js', array('jquery'), '1.1.1', true);
     wp_enqueue_script('js-custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), '2', true);
     wp_enqueue_script('js_zws_wp_custom_js', get_template_directory_uri() . '/assets/js/zws_wp_custom.js', array('jquery'), '2.1.1', true);
+    wp_enqueue_script('js_zws_pooper_js', get_template_directory_uri() . '/assets/js/pooper.js', array('jquery'), '2.1.1', true);
+    wp_enqueue_script('js_zws_base_js', get_template_directory_uri() . '/assets/js/base.js', array('jquery'), '1.1', true);
     //wp_enqueue_script('js-smartmenus-js', get_template_directory_uri() . '/assets/js/jquery.smartmenus.min.js', array('jquery'), '', true);
     //wp_enqueue_script('js-smartmenus-bootstrap-js', get_template_directory_uri() . '/assets/js/jquery.smartmenus.bootstrap.min.js', array('jquery'), '', true);
     
