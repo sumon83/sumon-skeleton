@@ -23,8 +23,8 @@ function checkDelete() {
 
 
  
-  $(document).ready(function() {
-    $(".zwsdatepicker").datepicker();
-    $("#days_available").multiDatesPicker();
+  //$(document).ready(function() {
+    //$(".zwsdatepicker").datepicker();
+   // $("#days_available").multiDatesPicker();
     
-  });
+  //});

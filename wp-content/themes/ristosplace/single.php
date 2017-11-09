@@ -15,7 +15,7 @@ get_header();
 <div class="wrap">
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-
+Hi i am single
             <?php
             /* Start the Loop */
             while (have_posts()) : the_post();
@@ -42,3 +42,4 @@ get_header();
 
 <?php
 get_footer();
+?>

@@ -14,7 +14,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-md-3 footer-contact">
-                            <img class="img-fluid mb-3" src="img/logo-footer.png" width="100" alt="Logo">
+<!--                            <img class="img-fluid mb-3" src="img/logo-footer.png" width="100" alt="Logo">-->
                             <div>
                                 <p class="fa fa-phone mb-1"><span>704-872-5557</span></p>
                                 <p class="fa fa-envelope d-block"><a href="mailto:ristosplace@gmail.com">ristosplace@gmail.com</a></p>

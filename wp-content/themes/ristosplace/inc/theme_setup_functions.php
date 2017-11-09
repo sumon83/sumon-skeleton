@@ -34,15 +34,17 @@ function ristosplace_custom_logo_setup()
 
     //register a manu at admin panel
     $navigationMenus = array(
-        'header_menu' => 'Header Menu',
-        'footer_menu' => 'Footer Menu',
-        'social_media_menu' => 'Social Media Menu'
+        'header_menu' => __('Header Menu', 'ristosplace'),
+        'footer_menu' => __('Footer Menu', 'ristosplace'),
+        'social_media_menu' => __('Social Media Menu', 'ristosplace')
     );
     register_nav_menus($navigationMenus);
-
 }
 
 add_action('after_setup_theme', 'ristosplace_custom_logo_setup');
+
+//Require the nav walker class file
+require_once 'zws_bootstrap_navwalker.php';
 
 
 

@@ -24,11 +24,10 @@ if ( version_compare( $GLOBALS['wp_version'], '4.7-alpha', '<' ) ) {
 require get_parent_theme_file_path('inc/header-functions.php');
 /* Theme setup functions*/
 require get_parent_theme_file_path('inc/theme_setup_functions.php');
-/* Theme custom functions*/
+/* Theme custom post, page etc functions*/
 require get_parent_theme_file_path('inc/custom_setup_functions.php');
 /* Template tags functions*/
 require get_parent_theme_file_path('inc/template_tags.php');
-include __DIR__.'/inc/custom_single_page_plugin.php';
 
 function portfolio(){
     add_theme_support( 'portfolio' );

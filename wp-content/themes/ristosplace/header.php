@@ -14,7 +14,7 @@
         <meta charset="<?php bloginfo('charset'); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="profile" href="http://gmpg.org/xfn/11">
-
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Zilla+Slab:300,400,500,600,600i,700,700i" rel="stylesheet"> 
         <?php wp_head(); ?>
     </head>
 
@@ -69,21 +69,34 @@
                         if (has_nav_menu('header_menu')) :
                             wp_nav_menu(
                                     array(
-                                        'menu_class' => 'navbar-nav text-md-center nav-justified w-100',
-                                        'theme_location' => 'header_menu',
-                                        'fallback_cb' => 'false',
-                                        'walker' => ''
+                                        'menu' => '', 
+                                        //'container' => 'div', 
+                                        'container' => 'nav', 
+                                        'container_class' => '', 
+                                        'container_id' => '', 
+                                        //'menu_class' => 'menu', 
+                                        'menu_class' => 'navbar-nav text-md-center nav-justified w-100', 
+                                        'menu_id' => '',
+                                        'echo' => true, 
+                                        //'fallback_cb' => 'wp_page_menu', 
+                                        'fallback_cb' => 'ZWS_Bootstrap_Navwalker::buildmenu',
+                                        'before' => '', 
+                                        'after' => '', 
+                                        'link_before' => '', 
+                                        'link_after' => '', 
+                                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', 
+                                        'item_spacing' => 'preserve',
+                                        'depth' => 0, 
+                                        //'walker' => '', 
+                                        'walker' => new ZWS_Bootstrap_Navwalker(),
+                                        'theme_location' => '',
+                                        //'theme_location' => 'header_menu',
                                     )
                             );
                             ?>
                         </div>
                     </div>
                 </nav>
-                <div class="navigation-top">
-                    <div class="wrap">
-                        <?php get_template_part('template-parts/navigation/navigation', 'header_menu'); ?>
-                    </div><!-- .wrap -->
-                </div><!-- .navigation-top -->
             <?php endif; ?>
 
         </header>
